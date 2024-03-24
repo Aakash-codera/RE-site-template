@@ -1,0 +1,135 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	cursor: pointer;
+	font-family: sans-serif;
+
+}
+BODY{
+	width: 100%;
+	min-height: 100vh;
+	background: black;
+	overflow: hidden;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 20px;
+	color: white;
+	animation: header 2s ease-in-out;
+
+
+}
+@keyframes header{
+  0%{
+  	transform: translateY(-100%);
+  }
+}
+nav li {
+	display: inline-block;
+	margin: 10px 20px;
+	font-weight: 600;
+
+}
+.main{
+	width: 100%;
+	display: flex;
+}
+.cont{
+	width: 50%;
+	margin-top: 8%;
+	margin-left: 5%;
+	color: white;	
+	overflow: hidden;
+	animation: cont 7s ease-in-out;
+}
+@keyframes cont{
+	0%{
+		opacity: 0;
+		transform: translateX(50%);
+	}
+}
+.cont h1{
+	font-size: 80px;
+	margin-bottom: 1%;
+	letter-spacing: 8px;
+
+}
+.cont h1:hover{
+	color: red;
+	text-shadow: white;
+}
+.cont h3{
+	font-size: 25px;
+	margin-bottom: 3%;
+	font-family: verdana,geneva,tahma;
+/*	overflow: hidden;*/
+}
+span{
+	color: yellow;
+}
+p{
+
+}
+.cont p{
+
+	 font-size: 20px;
+	 margin-bottom: 3%;
+	 font-family: verdana,geneva,tahma;
+}
+button{
+	padding: 15px 30px;
+	background: transparent;
+	color: white;
+	font-size: 17px;
+	border-radius: 10px;
+}
+button:hover{
+	 background-color: yellow;
+	 color:black;
+}
+.image img {
+	  border-radius: 50%;
+	  border-top-left-radius:0%;
+	  border-top-right-radius: 0%;
+}
+.image{
+      width: 50%;
+      margin-top: 4%;
+
+}
+img{
+	width: 40rem;
+		animation: im 1s ease-in-out;
+
+}
+@keyframes im{
+	0%{
+		opacity: 0;
+		transform: translateX(50%);
+	}
+
+} 
+@media screen and (max-width:576px){
+ 
+ .cont{
+ 	width: 100%;
+ 	text-align: center;
+ }	
+ .image{
+ 	width: 100%;
+ 	position: absolute;
+ 	bottom: -10%;
+ 	justify-content: center;
+ }
+ img{
+ 	width: 20rem;
+ }
+
+}
+
+
+
+
+
